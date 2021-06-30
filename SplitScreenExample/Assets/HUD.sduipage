@@ -1,0 +1,81 @@
+!UIPageAsset
+Id: 1237044e-3916-498b-a981-1245aee7ea4e
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! 8985d1b6-e419-4c7d-a559-fde4f2d18510
+    Parts:
+        -   UIElement: !TextBlock
+                Id: 049d4c65-af65-4f98-a3b4-e1fa8f5687c0
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Hello world!
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !ImageElement
+                Id: 232ae033-98bf-4520-b71f-4bee3e2c4476
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Source: !SpriteFromTexture
+                    Texture: cd84a375-518b-4c1e-8122-0687bed8b54d:Textures/Player1CameraTexture
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}
+        -   UIElement: !ContentDecorator
+                Id: 2d5b330d-e2a3-4741-add0-1094374c8ecb
+                DependencyProperties:
+                    52b3060df4f3add961d4a4ac7f5603a7~GridBase.RowSpanPropertyKey: 2
+                    2ebbb8db5992863f4e3e5461718cbe43~GridBase.ColumnPropertyKey: 1
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Padding: {}
+                Content: !TextBlock ref!! 049d4c65-af65-4f98-a3b4-e1fa8f5687c0
+        -   UIElement: !Grid
+                Id: 8985d1b6-e419-4c7d-a559-fde4f2d18510
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    06d7fd3a92244cf4314ddf26aa355d9e: !ImageElement ref!! 232ae033-98bf-4520-b71f-4bee3e2c4476
+                    5f530cc2939de147773841e32b6ea96c: !ImageElement ref!! c869d658-57a2-42eb-8f9d-988837dea55d
+                    2dac2251823e49ea4ffaaa36ea4ba39d: !ContentDecorator ref!! 2d5b330d-e2a3-4741-add0-1094374c8ecb
+                RowDefinitions:
+                    b954700b1ce0096f376dcd2f7bde684c: {}
+                    4faea2a685761698c85c050435da6884: {}
+                ColumnDefinitions:
+                    f883436a3f8076f7d6e497a0879dbae9: {}
+                    4a4ed26f7ef5da9ec4d1775976e80e5e:
+                        Type: Fixed
+                        SizeValue: 260.0
+                LayerDefinitions: {}
+        -   UIElement: !ImageElement
+                Id: c869d658-57a2-42eb-8f9d-988837dea55d
+                DependencyProperties:
+                    286893814174b8f55f6d01385927d2d3~GridBase.RowPropertyKey: 1
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Source: !SpriteFromTexture
+                    Texture: 58aebdc2-1c71-4be5-b86a-67f59ef55b39:Textures/Player2CameraTexture
+                    Center: {X: 0.0, Y: 0.0}
+                Color: {R: 255, G: 255, B: 255, A: 255}

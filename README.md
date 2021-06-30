@@ -8,3 +8,5 @@ Some minutiae to note:
 * The render masks of each camera is set - Main camera only has render group 31. Player1/2 have every render group *except* 31.
 * The main camera does not have post processing turned on for it. Only the player cameras have it enabled.
 * Main camera is Orthographic. It only purpose is to render the HUD UI element, which has the camera layout.
+
+![Example](/Example.jpg)
